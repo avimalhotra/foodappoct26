@@ -9,9 +9,7 @@ export default function FoodApp(){
      const [items,setItems]=useState([ { strMeal: '', strMealThumb:"globe.svg", strCategory:"", strCountry:"", idMeal:"" }]);
      const [error,setError]=useState("");
 
-     console.log( items );
-     
-
+    
     
      async function searchFood(e : React.FormEvent<HTMLFormElement>){
           e.preventDefault();
