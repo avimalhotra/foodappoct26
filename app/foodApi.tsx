@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function FoodApp(){
+     
 
      const [items,setItems]=useState([ { strMeal: '', strMealThumb:"globe.svg", strCategory:"", strCountry:"", idMeal:"" }]);
      const [error,setError]=useState("");
