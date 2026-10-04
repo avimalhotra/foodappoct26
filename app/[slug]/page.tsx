@@ -16,7 +16,7 @@ export default function FoodItem( { params } :  { params: Promise<{slug: string}
       try{
 
           async function fetchFood(){
-                const x=await fetch(`${process.env.NEXT_PUBLIC_API_URL_ID}?i=${slug}`);
+                const x=await fetch(`${process.env.URL_ID}?i=${slug}`);
                     // if(!x.ok){ throw new Error(x.status) }
                const y=await x.json();
 
