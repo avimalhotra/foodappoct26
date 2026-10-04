@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function FoodApp(){
-
+     
 
      const [items,setItems]=useState([ { strMeal: '', strMealThumb:"globe.svg", strCategory:"", strCountry:"", idMeal:"" }]);
      const [error,setError]=useState("");
@@ -20,7 +20,7 @@ export default function FoodApp(){
           setError("");
 
           try{
-               const x=await fetch(`${process.env.URL_NAME}?s=${val}`);
+               const x=await fetch(`${process.env.NEXT_PUBLIC_API_URL_NAME}?s=${val}`);
                // if(!x.ok){ throw new Error(x.status) }
                const y=await x.json();
                
